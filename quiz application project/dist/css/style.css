@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+
+.welcome_text {
+    width: 400px;
+}
+
+.welcome_form input,
+.welcome_form button {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+}
+
+.welcome_form input {
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    text-align: center;
+    color: white;
+}
+
+.welcome_form button {
+    padding: 20px 20px;
+    color: blue;
+    border: none;
+    border-radius: 50px;
+    transition: 0.4s all;
+}
+
+.welcome_form button:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.welcome_form input:focus,
+.welcome_form button:focus {
+    outline: none;
+}
+
+.quiz_header {
+    background-color: white;
+    box-shadow: 0px 1px 5px 2px grey;
+    z-index: 1;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz_body {
+    background-color: rgb(230, 227, 227);
+}
+
+.quiz {
+    width: 800px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 60px auto;
+}
+.user_name{
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    padding: 0px 30px;
+
+}
+.options_ul{
+    list-style: none;
+    
+    margin-top: 30px;
+}
+.options{
+    background-color: white;
+    padding: 25px;
+    margin: 5px;
+    width: 400px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.4s all;
+    border: 1px solid blue;
+}
+.options:hover{
+    box-shadow: 0px 1px 5px 2px grey;
+    cursor: pointer;
+    
+}
+h2{
+    margin: 25px;
+}
+.btn_nextQuestion{
+    border: none;
+    padding: 20px;
+    width: 20em;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    transition: 0.4s all;
+}
+.btn_nextQuestion:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 3px grey;
+    transform: translateY(-4px)
+}
+.btn_nextQuestion:focus{
+    outline: none;
+}
+.active{
+    background-color: blue;
+    color: white;
+}
+.fa-trophy{
+    color: gold;
+    font-size: 20em;
+    
+}
+.info{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
